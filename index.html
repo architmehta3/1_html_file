@@ -913,32 +913,39 @@
                     <p class=" section-title__text">Have questions or need customized hauling solutions? Reach out to Shree Khatushyam Engineering Works (SKEW) today. Our dedicated team is ready to assist you with your trailer, tipper, and transportation needs. Contact us for reliable and innovative solutions tailored to your requirements</p>
                 </div>
                 <div class="contact-one__form-box">
-                    <form action="assets/inc/sendemail.php" class="contact-one__form contact-form-validated"
-                        novalidate="novalidate">
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdCOvKFWvEQywO7PhBogikGVktwQjxgaoX02euqGK9-hKmdPQ/formResponse" 
+                    method="post" class="contact-one__form contact-form-validated"
+                        novalidate="novalidate" onsubmit="return submitForm(event)">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4">
                                 <div class="contact-form__input-box">
-                                    <input type="text" placeholder="Your Name" name="name">
+                                    <input type="text" placeholder="Your Name" name="entry.1742501395" required>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4">
                                 <div class="contact-form__input-box">
-                                    <input type="email" placeholder="Email Address" name="email">
+                                    <input type="email" placeholder="Email Address" name="entry.1708295570" required>
                                 </div>
                             </div>
+                 
                             <div class="col-xl-4 col-lg-4">
                                 <div class="contact-form__input-box">
-                                    <input type="text" placeholder="Subject" name="Subject">
+                                    <input type="text" placeholder="Mobile no." name="entry.1755327857" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="contact-form__input-box">
+                                    <input  type="text" placeholder="Your requirement" name="entry.751573244" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-12 col-lg-12">
                                 <div class="contact-form__input-box text-message-box">
-                                    <textarea name="message" placeholder="Comment"></textarea>
+                                    <textarea name="entry.1342609954" placeholder="Description" required></textarea>
                                 </div>
                                 <div class="contact-form__btn-box">
-                                    <button type="submit" class="thm-btn contact-form__btn">Send Message</button>
+                                    <button type="submit"  class="thm-btn contact-form__btn">Send Message</button>
                                 </div>
                             </div>
                         </div>
@@ -1089,7 +1096,30 @@
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
     <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
 
-
+    <script>
+        function submitForm(event) {
+            // Get all input fields and textareas
+            var inputs = document.querySelectorAll('input[required], textarea[required]');
+    
+            // Check if all input fields are filled
+            var allFilled = true;
+            inputs.forEach(function(input) {
+                if (input.value.trim() === '') {
+                    allFilled = false;
+                }
+            });
+    
+            // If all fields are filled, show success message, else show error message
+            if (allFilled) {
+                alert('Submitted successfully');
+                return true; // Allow form submission
+            } else {
+                alert('Please fill in all fields');
+                event.preventDefault(); // Prevent form submission
+                return false; // Prevent form submission
+            }
+        }
+    </script>
 
 
     <!-- template js -->
