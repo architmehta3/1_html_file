@@ -179,37 +179,37 @@
                                 <img src="assets/images/shapes/contact-page-shape-1.png" alt="">
                             </div>
                             <h3 class="contact-page__title">Leave a message</h3>
-                            <form action="assets/inc/sendemail.php" class="contact-page__form contact-form-validated"
-                                novalidate="novalidate">
+                            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdCOvKFWvEQywO7PhBogikGVktwQjxgaoX02euqGK9-hKmdPQ/formResponse" class="contact-page__form contact-form-validated"
+                            method="post" novalidate="novalidate" onsubmit="return submitForm1(event)">
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="contact-page__form-input-box">
-                                            <input type="text" placeholder="Name" name="name">
+                                            <input type="text" placeholder="Name" required name="entry.1742501395">
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="contact-page__form-input-box">
-                                            <input type="email" placeholder="Email" name="email">
+                                            <input type="email" placeholder="Email" required name="entry.1708295570">
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="contact-page__form-input-box">
-                                            <input type="text" placeholder="Subject" name="Subject">
+                                            <input type="text" placeholder="Your requirement" required name="entry.751573244">
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="contact-page__form-input-box">
-                                            <input type="text" placeholder="Phone" name="Phone Number">
+                                            <input type="text" placeholder="Mobile no" name="entry.1755327857" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="contact-page__form-input-box text-message-box">
-                                            <textarea name="message" placeholder="Comment"></textarea>
+                                            <textarea rows="3" name="entry.1342609954" placeholder="Description" required></textarea>
                                         </div>
                                         <div class="contact-page__btn-box">
-                                            <a href="about.html" class="thm-btn contact-page__btn">Send Message</a>
+                                            <button onclick=""  class="thm-btn  contact-page__btn">Send Message</button>
                                         </div>
                                     </div>
                                 </div>
@@ -499,6 +499,30 @@
 
     <!-- template js -->
     <script src="assets/js/fixnix.js"></script>
+    <script>
+        function submitForm1(event) {
+            // Get all input fields and textareas
+            var inputs = document.querySelectorAll('input[required], textarea[required]');
+    
+            // Check if all input fields are filled
+            var allFilled = true;
+            inputs.forEach(function(input) {
+                if (input.value.trim() === '') {
+                    allFilled = false;
+                }
+            });
+    
+            // If all fields are filled, show success message, else show error message
+            if (allFilled) {
+                alert('Submitted successfully');
+                return true; // Allow form submission
+            } else {
+                alert('Please fill in all fields');
+                event.preventDefault(); // Prevent form submission
+                return false; // Prevent form submission
+            }
+        }
+    </script>
 </body>
 
 </html>
