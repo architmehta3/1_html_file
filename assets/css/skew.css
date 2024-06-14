@@ -7359,11 +7359,11 @@ ul {
 .team-one__content {
   position: absolute;
   bottom: 0;
-  right: 117px;
+  /* right: 117px; */
   left: 0;
   background-color: var(--skew-white);
   padding: 22px 19px 22px;
-  border-top-right-radius: 6px;
+  border-top-right-radius: 60px;
   z-index: 3;
 }
 
