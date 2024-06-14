@@ -905,19 +905,19 @@
     }
 
     .main-menu .mobile-nav__toggler {
-        color: var(--fixnix-white);
+        color: var(--skew-white);
     }
 
     .main-menu .mobile-nav__toggler:hover {
-        color: var(--fixnix-white);
+        color: var(--skew-white);
     }
 
     .main-menu-two .mobile-nav__toggler {
-        color: var(--fixnix-base);
+        color: var(--skew-base);
     }
 
     .main-menu-two .mobile-nav__toggler:hover {
-        color: var(--fixnix-black);
+        color: var(--skew-black);
     }
 
 
@@ -930,19 +930,19 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-menu .mobile-nav__toggler {
-        color: var(--fixnix-white);
+        color: var(--skew-white);
     }
 
     .main-menu .mobile-nav__toggler:hover {
-        color: var(--fixnix-white);
+        color: var(--skew-white);
     }
 
     .main-menu-two .mobile-nav__toggler {
-        color: var(--fixnix-base);
+        color: var(--skew-base);
     }
 
     .main-menu-two .mobile-nav__toggler:hover {
-        color: var(--fixnix-black);
+        color: var(--skew-black);
     }
 
 
@@ -973,19 +973,19 @@
     }
 
     .main-menu .mobile-nav__toggler {
-        color: var(--fixnix-white);
+        color: var(--skew-white);
     }
 
     .main-menu .mobile-nav__toggler:hover {
-        color: var(--fixnix-white);
+        color: var(--skew-white);
     }
 
     .main-menu-two .mobile-nav__toggler {
-        color: var(--fixnix-base);
+        color: var(--skew-base);
     }
 
     .main-menu-two .mobile-nav__toggler:hover {
-        color: var(--fixnix-black);
+        color: var(--skew-black);
     }
 
     .main-menu-two__search-cart-btn-box {
