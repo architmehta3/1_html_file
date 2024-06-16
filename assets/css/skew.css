@@ -24,7 +24,7 @@
   --skew-gray-rgb: 100, 100, 100;
   --skew-white: #ffffff;
   --skew-white-rgb: 255, 255, 255;
-  --skew-base: #cf1f1f;
+  --skew-base: #1f89cf;
   --skew-base-rgb: 207, 31, 31;
   --skew-black: #171a1d;
   --skew-black-rgb: 23, 26, 29;
@@ -5482,9 +5482,9 @@ ul {
 # Site Footer Two
 --------------------------------------------------------------*/
 .site-footer-two {
-  background-image: -moz-linear-gradient(90deg, rgb(23, 26, 29) 40%, rgb(207, 31, 31) 100%);
-  background-image: -webkit-linear-gradient(90deg, rgb(23, 26, 29) 40%, rgb(207, 31, 31) 100%);
-  background-image: -ms-linear-gradient(90deg, rgb(23, 26, 29) 40%, rgb(207, 31, 31) 100%);
+  background-image: -moz-linear-gradient(90deg, rgb(23, 26, 29) 40%, rgb(31, 137, 207) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(23, 26, 29) 40%, rgb(31, 137, 207) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(23, 26, 29) 40%, rgb(31, 137, 207) 100%);
 }
 
 .site-footer-two .site-footer__bottom {
