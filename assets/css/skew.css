@@ -5255,9 +5255,9 @@ ul {
 # contact Three              
 --------------------------------------------------------------*/
 .contact-three {
-  background-image: -moz-linear-gradient(-90deg, rgb(207, 31, 31) 30%, rgb(23, 26, 29) 100%);
-  background-image: -webkit-linear-gradient(-90deg, rgb(207, 31, 31) 30%, rgb(23, 26, 29) 100%);
-  background-image: -ms-linear-gradient(-90deg, rgb(207, 31, 31) 30%, rgb(23, 26, 29) 100%);
+  background-image: -moz-linear-gradient(-90deg, rgb(31, 137, 207) 30%, rgb(23, 26, 29) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgb(31, 137, 207) 30%, rgb(23, 26, 29) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgb(31, 137, 207) 30%, rgb(23, 26, 29) 100%);
 }
 
 .contact-three .contact-one-bg:before {
