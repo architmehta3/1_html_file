@@ -5477,6 +5477,14 @@ ul {
 .blog-two__read-more:hover {
   color: var(--skew-base);
 }
+.sp {
+  padding: 0;
+  margin: 0;
+}
+
+.sp ul {
+  margin-bottom: 14px;
+}
 
 /*--------------------------------------------------------------
 # Site Footer Two
