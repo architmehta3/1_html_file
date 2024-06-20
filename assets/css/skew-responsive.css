@@ -131,10 +131,10 @@ table.customTable {
   }
   
   table.customTable td, table.customTable th {
-    border-width: 2px;
+    border-width: 3px;
     border-color: #7EA8F8;
     border-style: solid;
-    padding: 5px;
+    padding: 14px;
   }
   
   table.customTable thead {
